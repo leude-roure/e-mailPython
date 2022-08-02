@@ -1,0 +1,37 @@
+import pyautogui
+import pyperclip
+import time
+
+pyautogui.PAUSE = 0.5
+
+pyautogui.hotkey("ctrl", "t")
+pyperclip.copy("https://drive.google.com/drive/u/0/my-drive")
+pyautogui.hotkey("ctrl", "v")
+pyautogui.press("enter")
+time.sleep(5)
+
+pyautogui.click(x=389, y=319, clicks=2)
+time.sleep(5)
+pyautogui.click(x=1847, y=125)
+
+pyautogui.hotkey("ctrl", "t")
+pyperclip.copy("https://mail.google.com/mail/u/2/?ogbl#inbox")
+pyautogui.hotkey("ctrl", "v")
+pyautogui.press("enter")
+time.sleep(3)
+
+pyautogui.click(x=100, y=223)
+time.sleep(2)
+pyautogui.write("testesqa.pj@gmail.com")
+pyautogui.press("tab")
+pyautogui.press("tab")
+time.sleep(2)
+pyautogui.write("CV Leude Roure")
+pyautogui.press("tab")
+time.sleep(5)
+pyautogui.click(x=1378, y=944)
+pyautogui.click(x=117, y=282)
+pyautogui.click(x=223, y=209)
+time.sleep(10)
+pyautogui.press("tab")
+pyautogui.press("enter")
